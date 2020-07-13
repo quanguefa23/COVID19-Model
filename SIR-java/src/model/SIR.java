@@ -12,8 +12,8 @@ public class SIR {
     private static final int START_DAY_FOR_TRAIN = 100;
     private static final int END_DAY_FOR_TRAIN = 130;
 
-    private static final int START_DAY_FOR_TEST = 100;
-    private static final int END_DAY_FOR_TEST = 130;
+    private static final int START_DAY_FOR_TEST = 130;
+    private static final int END_DAY_FOR_TEST = 160;
 
     public static void main(String... argv) {
         ReadDataFromCSV readDataFromCSV = new ReadDataFromCSV();
