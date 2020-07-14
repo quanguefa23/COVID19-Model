@@ -6,8 +6,8 @@ from torch.nn import functional as F
 class SirModel(nn.Module):
     def __init__(self):
         super(SirModel, self).__init__()
-        self.beta = nn.Parameter(torch.FloatTensor(1.0))
-        self.gamma = nn.Parameter(torch.FloatTensor(1.0))
+        self.beta = nn.Parameter(torch.tensor(0.02))
+        self.gamma = nn.Parameter(torch.tensor(0.001))
 
     def forward(self, s, i, r, n):
         """

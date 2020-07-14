@@ -1,5 +1,6 @@
 from models.sir import SirModel
 
+import torch
 from torch import nn
 from torch import optim
 import pandas as pd
@@ -10,15 +11,16 @@ import argparse
 def parse_args():
     parser = argparse.ArgumentParser("Training script for Sir Model")
     parser.add_argument("csv_path")
-    parser.add_argument("population")
+    parser.add_argument("population", type=int)
 
     parser.add_argument("--start_day", default=30, type=int)
     parser.add_argument("--end_day", default=60, type=int)
+    parser.add_argument("--lr", default=1e-5, type=float)
 
     return parser.parse_args()
 
 
-def train(model, df, population):
+def train(model, df, population, lr):
     """ Train simple model 
     Args:
         model (nn.Module)
@@ -32,23 +34,27 @@ def train(model, df, population):
     i = np.array(df.confirmed) - r
     s = (-1) * (i + r - population)
 
-    optimizer = optim.SGD(model.paramters(), lr=1e-2)
+    optimizer = optim.SGD(model.parameters(), lr=lr)
     loss_function = nn.MSELoss()
 
     n_s = len(s)
-    s_prev = s[0 : n_s - 1]
-    i_prev = i[0 : n_s - 1]
-    r_prev = r[0 : n_s - 1]
+    s_prev = torch.tensor(s[0 : n_s - 1]).float()
+    i_prev = torch.tensor(i[0 : n_s - 1]).float()
+    r_prev = torch.tensor(r[0 : n_s - 1]).float()
 
-    s_next = s[1:]
-    i_next = i[1:]
-    r_next = r[1:]
+    s_next = torch.tensor(s[1:]).float()
+    i_next = torch.tensor(i[1:]).float()
+    r_next = torch.tensor(r[1:]).float()
+
+    max_s = np.max(s)
+    max_r = np.max(r)
+    max_i = np.max(i)
 
     for epoch in range(100):
         s_pred, i_pred, r_pred = model(s_prev, i_prev, r_prev, population)
-        ls = loss_function(s_pred, s_next)
-        li = loss_function(i_pred, i_next)
-        lr = loss_function(r_pred, r_next)
+        ls = loss_function(s_pred, s_next) 
+        li = loss_function(i_pred, i_next) 
+        lr = loss_function(r_pred, r_next) 
 
         loss = ls + li + lr
         loss_int = loss.item()
@@ -65,7 +71,7 @@ def load_df_and_population(args):
     df = pd.read_csv(args.csv_path)
     population = int(args.population)
 
-    df = df[args.start_day : args : end_day + 1]
+    df = df[args.start_day : args.end_day + 1]
 
     return df, population
 
@@ -76,7 +82,8 @@ def main():
 
     df, population = load_df_and_population(args)
 
-    train(model, df, population)
+    train(model, df, population, args.lr)
+
     print(model)
 
 
