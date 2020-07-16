@@ -15,12 +15,13 @@ def parse_args():
 
     parser.add_argument("--start_day", default=30, type=int)
     parser.add_argument("--end_day", default=60, type=int)
-    parser.add_argument("--lr", default=1e-5, type=float)
+    parser.add_argument("--lr", default=1e-14, type=float)
+    parser.add_argument("--epochs", default=100, type=int)
 
     return parser.parse_args()
 
 
-def train(model, df, population, lr):
+def train(model, df, population, lr, args):
     """ Train simple model 
     Args:
         model (nn.Module)
@@ -35,7 +36,7 @@ def train(model, df, population, lr):
     s = (-1) * (i + r - population)
 
     optimizer = optim.SGD(model.parameters(), lr=lr)
-    loss_function = nn.MSELoss()
+    loss_function = nn.MSELoss(reduction="mean")
 
     n_s = len(s)
     s_prev = torch.tensor(s[0 : n_s - 1]).float()
@@ -50,10 +51,12 @@ def train(model, df, population, lr):
     max_r = np.max(r)
     max_i = np.max(i)
 
-    for epoch in range(100):
+    for epoch in range(args.epochs):
         s_pred, i_pred, r_pred = model(s_prev, i_prev, r_prev, population)
         ls = loss_function(s_pred, s_next) 
+        # ls = 0 
         li = loss_function(i_pred, i_next) 
+        # li = 0
         lr = loss_function(r_pred, r_next) 
 
         loss = ls + li + lr
@@ -63,7 +66,7 @@ def train(model, df, population, lr):
         loss.backward()
         optimizer.step()
 
-        if epoch % 10 == 0:
+        if epoch % (args.epochs // 10) == 0:
             print(f"Epoch {epoch}: {loss_int}")
 
 
@@ -82,7 +85,7 @@ def main():
 
     df, population = load_df_and_population(args)
 
-    train(model, df, population, args.lr)
+    train(model, df, population, args.lr, args)
 
     print(model)
 
