@@ -4,10 +4,10 @@ from torch.nn import functional as F
 
 
 class SirModel(nn.Module):
-    def __init__(self):
+    def __init__(self, beta=0.02, gamma=0.001):
         super(SirModel, self).__init__()
-        self.beta = nn.Parameter(torch.tensor(0.02))
-        self.gamma = nn.Parameter(torch.tensor(0.001))
+        self.beta = nn.Parameter(torch.tensor(beta))
+        self.gamma = nn.Parameter(torch.tensor(gamma))
 
     def forward(self, s, i, r, n):
         """
