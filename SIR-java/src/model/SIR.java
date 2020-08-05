@@ -26,6 +26,9 @@ public class SIR {
         SIRParam param = trainModelDerivativeMethod(us, START_DAY_FOR_TRAIN, END_DAY_FOR_TRAIN);
 
         // run model
+        System.out.println(param.beta + " | " + param.gamma);
+//        param.beta = 0.019999999552965164;
+//        param.gamma = 0.009947618469595909;
         List<DataEachDay> resultRunModel = runModel(us.getDataSet().get(START_DAY_FOR_TEST), param.beta, param.gamma,
                 us.getN(), END_DAY_FOR_TEST - START_DAY_FOR_TEST);
 
