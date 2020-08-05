@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="653cb3b2-5a73-4fde-af36-4b1c156707a2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/SIR-java/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/COVID19.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/US.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Afghanistan.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Albania.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Algeria.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Andorra.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Angola.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Antigua and Barbuda.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Argentina.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Armenia.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Austria.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Azerbaijan.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Bahamas.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Bahrain.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Bangladesh.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Barbados.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Belarus.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Belgium.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Belize.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Benin.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Bhutan.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Bolivia.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Bosnia and Herzegovina.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Brazil.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Brunei.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Bulgaria.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Burkina Faso.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Burma.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Cabo Verde.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Cambodia.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Cameroon.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Central African Republic.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Chad.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Chile.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Colombia.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Congo (Brazzaville).csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Congo (Kinshasa).csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Costa Rica.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Cote d'Ivoire.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Croatia.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Cuba.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Cyprus.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Czechia.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Denmark.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Diamond Princess.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Djibouti.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Dominica.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Dominican Republic.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Ecuador.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Egypt.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/El Salvador.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Equatorial Guinea.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Eritrea.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Estonia.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Eswatini.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Ethiopia.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Fiji.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Finland.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/France.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Gabon.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Gambia.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Georgia.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Germany.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Ghana.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Greece.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Grenada.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Guatemala.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Guinea-Bissau.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Guinea.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Guyana.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Haiti.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Holy See.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Honduras.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Hungary.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Iceland.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/India.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Indonesia.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Iran.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Iraq.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Ireland.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Israel.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Italy.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Jamaica.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Japan.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Jordan.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Kazakhstan.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Kenya.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Korea, South.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Kosovo.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Kuwait.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Kyrgyzstan.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Laos.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Latvia.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Lebanon.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Liberia.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Libya.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Liechtenstein.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Lithuania.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Luxembourg.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/MS Zaandam.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Madagascar.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Malaysia.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Maldives.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Mali.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Malta.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Mauritania.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Mauritius.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Mexico.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Moldova.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Monaco.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Mongolia.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Montenegro.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Morocco.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Mozambique.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Namibia.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Nepal.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Netherlands.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/New Zealand.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Nicaragua.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Niger.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Nigeria.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/North Macedonia.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Norway.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Oman.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Pakistan.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Panama.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Papua New Guinea.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Paraguay.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Peru.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Philippines.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Poland.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Portugal.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Qatar.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Romania.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Russia.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Rwanda.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Saint Kitts and Nevis.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Saint Lucia.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Saint Vincent and the Grenadines.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/San Marino.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Saudi Arabia.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Senegal.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Serbia.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Seychelles.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Singapore.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Slovakia.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Slovenia.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Somalia.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/South Africa.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Spain.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Sri Lanka.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Sudan.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Suriname.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Sweden.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Switzerland.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Syria.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Taiwan_.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Tanzania.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Thailand.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Timor-Leste.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Togo.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Trinidad and Tobago.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Tunisia.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Turkey.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/US.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Uganda.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Ukraine.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/United Arab Emirates.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/United Kingdom.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Uruguay.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Uzbekistan.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Venezuela.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Vietnam.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/West Bank and Gaza.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Zambia.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/countries/Zimbabwe.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/data/population.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/out/production/COVID19/META-INF/COVID19.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/out/production/COVID19/entity/Country.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/out/production/COVID19/entity/DataEachDay.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/out/production/COVID19/getdata/ReadDataFromCSV.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/out/production/COVID19/model/SIR$SIRParam.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/out/production/COVID19/model/SIR.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/src/entity/Country.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/src/entity/DataEachDay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/src/getdata/ReadDataFromCSV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SIR-java/src/model/SIR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COVID19.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/US.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Afghanistan.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Albania.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Algeria.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Andorra.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Angola.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Antigua and Barbuda.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Argentina.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Armenia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Austria.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Azerbaijan.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Bahamas.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Bahrain.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Bangladesh.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Barbados.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Belarus.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Belgium.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Belize.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Benin.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Bhutan.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Bolivia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Bosnia and Herzegovina.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Brazil.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Brunei.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Bulgaria.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Burkina Faso.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Burma.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Cabo Verde.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Cambodia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Cameroon.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Central African Republic.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Chad.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Chile.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Colombia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Congo (Brazzaville).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Congo (Kinshasa).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Costa Rica.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Cote d'Ivoire.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Croatia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Cuba.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Cyprus.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Czechia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Denmark.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Diamond Princess.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Djibouti.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Dominica.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Dominican Republic.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Ecuador.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Egypt.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/El Salvador.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Equatorial Guinea.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Eritrea.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Estonia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Eswatini.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Ethiopia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Fiji.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Finland.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/France.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Gabon.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Gambia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Georgia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Germany.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Ghana.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Greece.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Grenada.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Guatemala.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Guinea-Bissau.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Guinea.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Guyana.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Haiti.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Holy See.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Honduras.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Hungary.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Iceland.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/India.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Indonesia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Iran.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Iraq.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Ireland.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Israel.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Italy.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Jamaica.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Japan.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Jordan.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Kazakhstan.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Kenya.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Korea, South.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Kosovo.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Kuwait.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Kyrgyzstan.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Laos.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Latvia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Lebanon.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Liberia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Libya.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Liechtenstein.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Lithuania.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Luxembourg.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/MS Zaandam.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Madagascar.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Malaysia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Maldives.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Mali.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Malta.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Mauritania.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Mauritius.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Mexico.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Moldova.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Monaco.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Mongolia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Montenegro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Morocco.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Mozambique.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Namibia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Nepal.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Netherlands.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/New Zealand.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Nicaragua.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Niger.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Nigeria.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/North Macedonia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Norway.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Oman.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Pakistan.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Panama.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Papua New Guinea.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Paraguay.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Peru.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Philippines.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Poland.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Portugal.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Qatar.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Romania.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Russia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Rwanda.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Saint Kitts and Nevis.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Saint Lucia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Saint Vincent and the Grenadines.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/San Marino.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Saudi Arabia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Senegal.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Serbia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Seychelles.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Singapore.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Slovakia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Slovenia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Somalia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/South Africa.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Spain.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Sri Lanka.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Sudan.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Suriname.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Sweden.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Switzerland.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Syria.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Taiwan_.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Tanzania.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Thailand.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Timor-Leste.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Togo.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Trinidad and Tobago.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Tunisia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Turkey.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/US.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Uganda.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Ukraine.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/United Arab Emirates.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/United Kingdom.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Uruguay.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Uzbekistan.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Venezuela.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Vietnam.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/West Bank and Gaza.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Zambia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/Zimbabwe.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/population.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COVID19/META-INF/COVID19.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COVID19/entity/Country.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COVID19/entity/DataEachDay.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COVID19/getdata/ReadDataFromCSV.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COVID19/model/SIR$SIRParam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COVID19/model/SIR.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Country.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/DataEachDay.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/getdata/ReadDataFromCSV.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/SIR.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\JavaProject\COVID19\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ecLYiGhIfa96FQ179PbpEzBLKP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/SIR-java" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RunManager">
+    <configuration name="covid19" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="model.SIR" />
+      <module name="COVID19" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="653cb3b2-5a73-4fde-af36-4b1c156707a2" name="Default Changelist" comment="" />
+      <created>1594615984002</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594615984002</updated>
+    </task>
+    <task id="LOCAL-00001" summary="[i] initial commit">
+      <created>1594661653799</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1594661653799</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="[i] initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="[i] initial commit" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594623688937">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1594623688937" />
+    <state x="574" y="84" key="#com.intellij.ide.util.MemberChooser" timestamp="1594659205716">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="84" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1594659205716" />
+    <state x="498" y="196" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1594623688130">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="498" y="196" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1594623688130" />
+    <state x="356" y="0" key="CommitChangelistDialog2" timestamp="1594661652934">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="356" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1594661652934" />
+    <state x="499" y="93" key="FileChooserDialogImpl" timestamp="1594661820149">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="93" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1594661820149" />
+    <state width="1481" height="46" key="GridCell.Tab.0.bottom" timestamp="1594661821507">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1481" height="46" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594661821507" />
+    <state width="1481" height="46" key="GridCell.Tab.0.center" timestamp="1594661821507">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1481" height="46" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594661821507" />
+    <state width="1481" height="46" key="GridCell.Tab.0.left" timestamp="1594661821506">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1481" height="46" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594661821506" />
+    <state width="1481" height="46" key="GridCell.Tab.0.right" timestamp="1594661821507">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1481" height="46" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594661821507" />
+    <state width="1481" height="46" key="GridCell.Tab.1.bottom" timestamp="1594661821507">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1481" height="46" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594661821507" />
+    <state width="1481" height="46" key="GridCell.Tab.1.center" timestamp="1594661821507">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1481" height="46" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1594661821507" />
+    <state width="1481" height="46" key="GridCell.Tab.1.left" timestamp="1594661821507">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1481" height="46" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1594661821507" />
+    <state width="1481" height="46" key="GridCell.Tab.1.right" timestamp="1594661821507">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1481" height="46" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1594661821507" />
+    <state x="277" y="0" key="SettingsEditor" timestamp="1594660586307">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1594660586307" />
+    <state x="401" y="195" key="com.intellij.ide.util.TipDialog" timestamp="1594652836867">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="401" y="195" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1594652836867" />
+    <state x="341" y="183" width="840" height="1034" key="run.anything.popup" timestamp="1594634271942">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="341" y="183" width="840" height="1034" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1594634271942" />
+    <state x="347" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1594634455418">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="347" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1594634455418" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="myObj.toString()" language="JAVA" />
+        <watch expression="myObj.toPath()" language="JAVA" />
+        <watch expression="dataEachDayList.get(170)" language="JAVA" />
+        <watch expression="(St - St_1) * N" language="JAVA" />
+        <watch expression="(St - St_1) * N" language="JAVA" />
+        <watch expression="Long.toString(230140 + param.gamma * It)" language="JAVA" />
+        <watch expression="Double.toString(param.gamma)" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
