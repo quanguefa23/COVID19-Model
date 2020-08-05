@@ -1,2 +1,4 @@
-# COVID19-Model
-Statistics and Application project. Colab with Vinh Hung Tran
+# CÁC MÔ HÌNH THỐNG KÊ ÁP DỤNG CHO COVID19
+Đồ án cuối kì môn Toán ứng dụng và thống kê  
+
+# 
