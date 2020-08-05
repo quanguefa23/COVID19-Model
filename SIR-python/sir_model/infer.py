@@ -9,7 +9,7 @@ import argparse
 
 
 def parse_args():
-    parser = argparse.ArgumentParser("Training script for Sir Model")
+    parser = argparse.ArgumentParser("Infering script for Sir Model")
     parser.add_argument("csv_path")
     parser.add_argument("population", type=int)
     parser.add_argument("--beta", type=float)
