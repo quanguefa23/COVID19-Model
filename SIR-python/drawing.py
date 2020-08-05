@@ -1,9 +1,11 @@
-import pandas as pd
+import pandas as pd 
 from matplotlib import pyplot as plt
 import argparse
 
 import os
 
+
+figname = "World Wide - Gradient"
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("data_path")
@@ -24,21 +26,28 @@ def main():
         "r": "Recovered + Death",
     }
 
-    for t in ["s", "i", "r"]:
-        fig = plt.Figure()
-        ax = fig.add_subplot()
+    scale = {
+        "s": "1e8",
+        "i": "1e5",
+        "r": "1e5",
+    }
+
+    fig = plt.figure(0, figsize=(8, 12))
+    fig.suptitle(figname, fontsize=16)
+    for i, t in enumerate(["s", "i", "r"]):
+        ax = fig.add_subplot(3, 1, i + 1)
         
-        ax.plot(df["day"], df[t], label=t + " predict")
-        ax.plot(df["day"], df[t + "_gt"], label=t + " ground truth")
+        ax.plot(df["day"], df[t] / float(scale[t]), label=t + " predict")
+        ax.plot(df["day"], df[t + "_gt"] / float(scale[t]), label=t + " ground truth")
 
         ax.set_xlabel("Day")
-        ax.set_ylabel(dictionary[t])
+        ax.set_ylabel(dictionary[t] + f" ({scale[t]})")
 
         ax.legend()
 
-        fig_path = os.path.join(args.output_folder, t + "_figure.pdf")
+        fig_path = os.path.join(args.output_folder, t + "_figure.png")
 
-        fig.savefig(fig_path)
+    fig.savefig(fig_path)
 
 main()
 
