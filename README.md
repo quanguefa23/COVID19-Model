@@ -1,4 +1,6 @@
-# CÁC MÔ HÌNH THỐNG KÊ ÁP DỤNG CHO COVID19
-Đồ án cuối kì môn Toán ứng dụng và thống kê  
+# STATISTICAL MODELS FOR COVID19
+Final project statistics and application subject
 
-# 
+## Members:
+1712702 - Nguyen Ha Quang
+1712060 - Tran Vinh Hung
