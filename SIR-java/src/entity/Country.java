@@ -19,10 +19,6 @@ public class Country {
         return dataSet;
     }
 
-    public String getName() {
-        return name;
-    }
-
     public Country(String name, long N, File file) {
         this.name = name;
         this.N = N;

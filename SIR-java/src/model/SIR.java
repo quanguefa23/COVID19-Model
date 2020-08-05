@@ -126,7 +126,6 @@ public class SIR {
             E += 1.0 * It * (Rt_1 - Rt - It_1 + It);
         }
 
-
         double gamma = (B*C + A*E) / (B*B + A*D);
         double beta = (C - B * gamma) / A;
 
