@@ -28,7 +28,7 @@ public class SIR {
         Country country = dataCountries.get(COUNTRY_NAME);
 
         // train model (calculate params)
-        SIRParam param = trainModelAverageMethod(country, START_DAY_FOR_TRAIN, END_DAY_FOR_TRAIN);
+        SIRParam param = trainModelDerivativeMethod(country, START_DAY_FOR_TRAIN, END_DAY_FOR_TRAIN);
 
         // run model
         System.out.println(param.beta + " | " + param.gamma);
@@ -36,8 +36,8 @@ public class SIR {
                 country.getN(), END_DAY_FOR_TEST - START_DAY_FOR_TEST);
 
         // print result
-        //String method = "der";
-        String method = "avr";
+        String method = "der";
+        //String method = "avr";
         printResultToConsole(resultRunModel, country);
         printResultToCSVFile(resultRunModel, country, method);
     }
