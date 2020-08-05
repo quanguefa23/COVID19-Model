@@ -4,6 +4,9 @@ import entity.Country;
 import entity.DataEachDay;
 import getdata.ReadDataFromCSV;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -23,7 +26,7 @@ public class SIR {
         Country us = dataCountries.get("us");
 
         // train model (calculate params)
-        SIRParam param = trainModelDerivativeMethod(us, START_DAY_FOR_TRAIN, END_DAY_FOR_TRAIN);
+        SIRParam param = trainModelDerivativeMethod2(us, START_DAY_FOR_TRAIN, END_DAY_FOR_TRAIN);
 
         // run model
         System.out.println(param.beta + " | " + param.gamma);
@@ -32,12 +35,12 @@ public class SIR {
         List<DataEachDay> resultRunModel = runModel(us.getDataSet().get(START_DAY_FOR_TEST), param.beta, param.gamma,
                 us.getN(), END_DAY_FOR_TEST - START_DAY_FOR_TEST);
 
-        // print result to console
-        printResult(resultRunModel, us);
+        // print result
+        printResultToConsole(resultRunModel, us);
+        printResultToCSVFile(resultRunModel, us);
     }
 
-    private static void printResult(List<DataEachDay> resultRunModel, Country us) {
-
+    private static void printResultToConsole(List<DataEachDay> resultRunModel, Country us) {
         int i = START_DAY_FOR_TEST;
         for(DataEachDay dayTrain : resultRunModel) {
             DataEachDay dayRealValue = us.getDataSet().get(++i);
@@ -51,11 +54,35 @@ public class SIR {
         }
     }
 
+
+    private static void printResultToCSVFile(List<DataEachDay> resultRunModel, Country us) {
+        try {
+            File myObj = new File("output/us_output.csv");
+            myObj.createNewFile();
+
+            FileWriter myWriter = new FileWriter("output/us_output.csv");
+            myWriter.write("day,s,i,r,s_gt,i_gt,r_gt\n");
+
+            String s = ",";
+            int i = START_DAY_FOR_TEST;
+            for(DataEachDay dayTrain : resultRunModel) {
+                DataEachDay dayRealValue = us.getDataSet().get(++i);
+                myWriter.write(i + s + dayTrain.S + s + dayTrain.I + s + dayTrain.R + s +
+                        dayRealValue.S + s + dayRealValue.I + s + dayRealValue.R + "\n");
+            }
+
+            myWriter.close();
+        } catch (IOException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        }
+    }
+
     private static List<DataEachDay> runModel(DataEachDay genesisDay, double beta, double gamma, long N, int period) {
         List<DataEachDay> list = new ArrayList<>();
 
         DataEachDay yesterday = genesisDay;
-        for (int i = 0; i < period; i++) {
+        for(int i = 0; i < period; i++) {
             long St = yesterday.S;
             long It = yesterday.I;
             long Rt = yesterday.R;
@@ -77,7 +104,7 @@ public class SIR {
         double numBeta = 0, denBeta = 0;
         long numGamma = 0, denGamma = 0;
 
-        for(int i = startDay; i < endDay; i++) {
+        for (int i = startDay; i < endDay; i++) {
             DataEachDay d1 = country.getDataSet().get(i);
             DataEachDay d2 = country.getDataSet().get(i + 1);
 
@@ -98,6 +125,37 @@ public class SIR {
 
         double beta = numBeta / denBeta;
         double gamma = 1.0 * numGamma / denGamma;
+
+        return new SIRParam(beta, gamma);
+    }
+
+    private static SIRParam trainModelDerivativeMethod2(Country country, int startDay, int endDay) {
+        double A, B, C, D, E;
+        A = B = C = D = E = 0;
+
+        for (int i = startDay; i < endDay; i++) {
+            DataEachDay d1 = country.getDataSet().get(i);
+            DataEachDay d2 = country.getDataSet().get(i + 1);
+
+            long N = country.getN();
+            long St = d1.S;
+            long St_1 = d2.S; // S(t+1)
+            long It = d1.I;
+            long It_1 = d2.I; // I(t+1)
+            long Rt = d1.R;
+            long Rt_1 = d2.R; // R(t+1)
+
+            double Mt = 1.0 * St * It / N;
+            A -= 2.0 * Mt * Mt;
+            B += Mt * It;
+            C += Mt * (St_1 - St - It_1 + It);
+            D += 2.0 * It * It;
+            E += 1.0 * It * (Rt_1 - Rt - It_1 + It);
+        }
+
+
+        double gamma = (B*C + A*E) / (B*B + A*D);
+        double beta = (C - B * gamma) / A;
 
         return new SIRParam(beta, gamma);
     }
