@@ -18,26 +18,28 @@ public class SIR {
     private static final int START_DAY_FOR_TEST = 130;
     private static final int END_DAY_FOR_TEST = 160;
 
+    private static final String COUNTRY_NAME = "world"; // "world" for whole world
+
     public static void main(String... argv) {
         ReadDataFromCSV readDataFromCSV = new ReadDataFromCSV();
         Map<String, Country> dataCountries = readDataFromCSV.getDataCountries();
 
         // sample data to run model: Trump
-        Country us = dataCountries.get("us");
+        Country country = dataCountries.get(COUNTRY_NAME);
 
         // train model (calculate params)
-        SIRParam param = trainModelDerivativeMethod2(us, START_DAY_FOR_TRAIN, END_DAY_FOR_TRAIN);
+        SIRParam param = trainModelAverageMethod(country, START_DAY_FOR_TRAIN, END_DAY_FOR_TRAIN);
 
         // run model
         System.out.println(param.beta + " | " + param.gamma);
-//        param.beta = 0.019999999552965164;
-//        param.gamma = 0.009947618469595909;
-        List<DataEachDay> resultRunModel = runModel(us.getDataSet().get(START_DAY_FOR_TEST), param.beta, param.gamma,
-                us.getN(), END_DAY_FOR_TEST - START_DAY_FOR_TEST);
+        List<DataEachDay> resultRunModel = runModel(country.getDataSet().get(START_DAY_FOR_TEST), param.beta, param.gamma,
+                country.getN(), END_DAY_FOR_TEST - START_DAY_FOR_TEST);
 
         // print result
-        printResultToConsole(resultRunModel, us);
-        printResultToCSVFile(resultRunModel, us);
+        //String method = "der";
+        String method = "avr";
+        printResultToConsole(resultRunModel, country);
+        printResultToCSVFile(resultRunModel, country, method);
     }
 
     private static void printResultToConsole(List<DataEachDay> resultRunModel, Country us) {
@@ -54,13 +56,13 @@ public class SIR {
         }
     }
 
-
-    private static void printResultToCSVFile(List<DataEachDay> resultRunModel, Country us) {
+    private static void printResultToCSVFile(List<DataEachDay> resultRunModel, Country us, String method) {
         try {
-            File myObj = new File("output/us_output.csv");
+            String fileName = "output/" + COUNTRY_NAME + "_" + method + ".csv";
+            File myObj = new File(fileName);
             myObj.createNewFile();
 
-            FileWriter myWriter = new FileWriter("output/us_output.csv");
+            FileWriter myWriter = new FileWriter(fileName);
             myWriter.write("day,s,i,r,s_gt,i_gt,r_gt\n");
 
             String s = ",";
@@ -101,35 +103,6 @@ public class SIR {
     }
 
     private static SIRParam trainModelDerivativeMethod(Country country, int startDay, int endDay) {
-        double numBeta = 0, denBeta = 0;
-        long numGamma = 0, denGamma = 0;
-
-        for (int i = startDay; i < endDay; i++) {
-            DataEachDay d1 = country.getDataSet().get(i);
-            DataEachDay d2 = country.getDataSet().get(i + 1);
-
-            long N = country.getN();
-            long St = d1.S;
-            long St_1 = d2.S; // S(t+1)
-            long It = d1.I;
-            long Rt = d1.R;
-            long Rt_1 = d2.R; // R(t+1)
-            double At = 1.0 * St * It / N;
-
-            numBeta += At * (St - St_1);
-            denBeta += At * At;
-
-            numGamma += It * (Rt_1 - Rt);
-            denGamma += It * It;
-        }
-
-        double beta = numBeta / denBeta;
-        double gamma = 1.0 * numGamma / denGamma;
-
-        return new SIRParam(beta, gamma);
-    }
-
-    private static SIRParam trainModelDerivativeMethod2(Country country, int startDay, int endDay) {
         double A, B, C, D, E;
         A = B = C = D = E = 0;
 
