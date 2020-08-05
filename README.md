@@ -1,5 +1,5 @@
 # STATISTICAL MODELS FOR COVID19
-Final project statistics and application subject
+Final project of statistics and application subject
 
 ## Members:
 1712702 - Nguyen Ha Quang  
